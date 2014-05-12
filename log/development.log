@@ -98533,3 +98533,49 @@ Started GET "/assets/welcome.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:55
 
 
 Started GET "/assets/application.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:57 +0000
+  [1m[36m (205.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (71.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140310203730)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (75.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (20.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (7.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (11.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140310203730"]]
+  [1m[36m (17.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddUsernameToUsers (20140311225222)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (12.0ms)[0m  [1mALTER TABLE "users" ADD COLUMN "username" character varying(255)[0m
+  [1m[35m (71.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140311225222"]]
+  [1m[35m (5.8ms)[0m  COMMIT
+Migrating to DeviseCreateAdmins (20140311225910)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (172.7ms)[0m  CREATE TABLE "admins" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (8.2ms)[0m  [1mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (19.3ms)[0m  CREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")
+  [1m[36mSQL (10.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140311225910"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+Migrating to AddUsernameToAdmin (20140311230545)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (13.5ms)[0m  ALTER TABLE "admins" ADD COLUMN "username" character varying(255)
+  [1m[36m (14.8ms)[0m  [1mCREATE UNIQUE INDEX "index_admins_on_username" ON "admins" ("username")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140311230545"]]
+  [1m[36m (27.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAttractions (20140426142207)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (58.9ms)[0m  [1mCREATE TABLE "attractions" ("id" serial primary key, "name" character varying(255), "description" character varying(255), "address" character varying(255), "phone" character varying(255), "website" character varying(255), "openning_hours" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (14.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140426142207"]]
+  [1m[36m (7.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20140428023833)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (119.4ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (50.7ms)[0m  CREATE TABLE "comment_translations" ("id" serial primary key, "locale" character varying(255), "comment_id" integer, "title" character varying(255), "description" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140428023833"]]
+  [1m[35m (27.0ms)[0m  COMMIT
+Migrating to RemoveTitleFrmCmments (20140428101419)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (41.6ms)[0m  CREATE TABLE "comment_translations" ("id" serial primary key, "comment_id" integer NOT NULL, "locale" character varying(255) NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+PG::Error: ERROR:  relation "comment_translations" already exists
+: CREATE TABLE "comment_translations" ("id" serial primary key, "comment_id" integer NOT NULL, "locale" character varying(255) NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
