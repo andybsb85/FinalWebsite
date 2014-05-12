@@ -97781,3 +97781,755 @@ Started GET "/assets/pic4.jpg" for 31.205.13.219 at 2014-05-12 03:51:22 +0000
 
 
 Started GET "/assets/picture1.jpg" for 31.205.13.219 at 2014-05-12 03:51:22 +0000
+
+
+Started GET "/" for 31.205.13.219 at 2014-05-12 13:15:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (9.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+default_url_options is passed options: {}
+
+  Rendered welcome/index.html.erb within layouts/application (9887.8ms)
+default_url_options is passed options: {}
+
+default_url_options is passed options: {}
+
+  Rendered layouts/_header.html.erb (19.9ms)
+  Rendered layouts/_footer.html.erb (6.4ms)
+Completed 200 OK in 15511ms (Views: 15453.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:36 +0000
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:37 +0000
+
+
+Started GET "/assets/attractions.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:37 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:37 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:37 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:37 +0000
+
+
+Started GET "/assets/locations.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:37 +0000
+
+
+Started GET "/assets/users.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:43 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 31.205.13.219 at 2014-05-12 13:15:44 +0000
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:44 +0000
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:44 +0000
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:44 +0000
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:45 +0000
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:45 +0000
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:45 +0000
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:45 +0000
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:45 +0000
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:45 +0000
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:46 +0000
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:46 +0000
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:46 +0000
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:47 +0000
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:47 +0000
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:47 +0000
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:48 +0000
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:48 +0000
+
+
+Started GET "/assets/foundation/index.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:48 +0000
+
+
+Started GET "/assets/underscore.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:48 +0000
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:48 +0000
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:48 +0000
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:51 +0000
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:51 +0000
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:51 +0000
+
+
+Started GET "/assets/attractions.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:51 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:51 +0000
+
+
+Started GET "/assets/locations.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:51 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:52 +0000
+
+
+Started GET "/assets/users.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:52 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 31.205.13.219 at 2014-05-12 13:15:53 +0000
+
+
+Started GET "/assets/pic4.jpg" for 31.205.13.219 at 2014-05-12 13:15:54 +0000
+
+
+Started GET "/assets/picture1.jpg" for 31.205.13.219 at 2014-05-12 13:15:54 +0000
+
+
+Started GET "/assets/pic3.jpg" for 31.205.13.219 at 2014-05-12 13:15:54 +0000
+
+
+Started GET "/welcome?locale=es" for 31.205.13.219 at 2014-05-12 13:23:38 +0000
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"es"}
+default_url_options is passed options: {}
+
+  Rendered welcome/index.html.erb within layouts/application (26.7ms)
+default_url_options is passed options: {}
+
+default_url_options is passed options: {}
+
+  Rendered layouts/_header.html.erb (13.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 961ms (Views: 948.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pic3.jpg" for 31.205.13.219 at 2014-05-12 13:23:41 +0000
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:44 +0000
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:44 +0000
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:44 +0000
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:44 +0000
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:45 +0000
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:46 +0000
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:46 +0000
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:46 +0000
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:46 +0000
+
+
+Started GET "/assets/foundation/index.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:46 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:46 +0000
+
+
+Started GET "/assets/underscore.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:47 +0000
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:47 +0000
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:47 +0000
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:47 +0000
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:47 +0000
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:47 +0000
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:48 +0000
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:48 +0000
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:48 +0000
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:49 +0000
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:50 +0000
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:50 +0000
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:50 +0000
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:50 +0000
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:51 +0000
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:51 +0000
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:51 +0000
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:51 +0000
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:51 +0000
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:51 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:54 +0000
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:54 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:54 +0000
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:55 +0000
+
+
+Started GET "/assets/attractions.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:55 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:55 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:56 +0000
+
+
+Started GET "/assets/locations.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:56 +0000
+
+
+Started GET "/assets/users.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:57 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 31.205.13.219 at 2014-05-12 13:23:58 +0000
+
+
+Started GET "/users/sign_in?locale=es" for 31.205.13.219 at 2014-05-12 13:23:58 +0000
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"es"}
+default_url_options is passed options: {}
+
+default_url_options is passed options: {}
+
+  Rendered devise/shared/_links.erb (28.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (365.9ms)
+default_url_options is passed options: {}
+
+  Rendered layouts/_header.html.erb (51.6ms)
+  Rendered layouts/_footer.html.erb (23.9ms)
+Completed 200 OK in 2123ms (Views: 1748.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/pic4.jpg" for 31.205.13.219 at 2014-05-12 13:24:00 +0000
+
+
+Started GET "/assets/picture1.jpg" for 31.205.13.219 at 2014-05-12 13:24:01 +0000
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:03 +0000
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:03 +0000
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:04 +0000
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:04 +0000
+
+
+Started GET "/assets/foundation/index.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:04 +0000
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:04 +0000
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:07 +0000
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:07 +0000
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:07 +0000
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:08 +0000
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:08 +0000
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:08 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:08 +0000
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:08 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:09 +0000
+
+
+Started GET "/assets/attractions.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:09 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:09 +0000
+
+
+Started GET "/assets/locations.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:09 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:09 +0000
+
+
+Started GET "/assets/users.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:09 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:10 +0000
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:24:10 +0000
+
+
+Started GET "/?locale=es" for 31.205.13.219 at 2014-05-12 13:27:32 +0000
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"es"}
+default_url_options is passed options: {}
+
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+default_url_options is passed options: {}
+
+default_url_options is passed options: {}
+
+  Rendered layouts/_header.html.erb (15.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 175ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/foundation/index.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/pic3.jpg" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:34 +0000
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:35 +0000
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:35 +0000
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:35 +0000
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:36 +0000
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:38 +0000
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:38 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:39 +0000
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:39 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:39 +0000
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:40 +0000
+
+
+Started GET "/assets/attractions.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:40 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:40 +0000
+
+
+Started GET "/assets/locations.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:40 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:40 +0000
+
+
+Started GET "/assets/users.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:41 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:41 +0000
+
+
+Started GET "/welcome?locale=en" for 31.205.13.219 at 2014-05-12 13:27:41 +0000
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+default_url_options is passed options: {}
+
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+default_url_options is passed options: {}
+
+default_url_options is passed options: {}
+
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pic4.jpg" for 31.205.13.219 at 2014-05-12 13:27:41 +0000
+
+
+Started GET "/assets/picture1.jpg" for 31.205.13.219 at 2014-05-12 13:27:41 +0000
+
+
+Started GET "/assets/foundation/index.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:41 +0000
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/pic3.jpg" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:42 +0000
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:43 +0000
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:43 +0000
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:43 +0000
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:43 +0000
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:43 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:43 +0000
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:43 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:44 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:44 +0000
+
+
+Started GET "/assets/locations.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:44 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:44 +0000
+
+
+Started GET "/assets/attractions.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:44 +0000
+
+
+Started GET "/assets/users.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:45 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 31.205.13.219 at 2014-05-12 13:27:45 +0000
+
+
+Started GET "/users/sign_in?locale=en" for 31.205.13.219 at 2014-05-12 13:29:49 +0000
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"en"}
+default_url_options is passed options: {}
+
+default_url_options is passed options: {}
+
+  Rendered devise/shared/_links.erb (7.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.9ms)
+default_url_options is passed options: {}
+
+  Rendered layouts/_header.html.erb (6.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 409ms (Views: 198.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:50 +0000
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:51 +0000
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:51 +0000
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:51 +0000
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/foundation/index.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:52 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:53 +0000
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:53 +0000
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:53 +0000
+
+
+Started GET "/assets/locations.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:54 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:54 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:54 +0000
+
+
+Started GET "/assets/users.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:55 +0000
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:55 +0000
+
+
+Started GET "/assets/attractions.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:55 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 31.205.13.219 at 2014-05-12 13:29:57 +0000
