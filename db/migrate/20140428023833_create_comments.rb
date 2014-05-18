@@ -6,6 +6,7 @@ class CreateComments < ActiveRecord::Migration
      create_table :comment_translations do |t|
       t.string :locale
       t.references :comment
+      t.belongs_to :user
       t.string :title
       t.text :description
       t.timestamps
