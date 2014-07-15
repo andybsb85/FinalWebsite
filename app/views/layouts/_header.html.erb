@@ -1,38 +1,201 @@
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><%= link_to t('.name'), root_path, id: "logo" %></h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  </ul>
+<div class = "header">
+  <div class = "headerUp">
+    <div class = "logo">
+      <%= image_tag("logo.png") %>
+    </div>
+    <div class ="header-right">
+      <nav class="top-bar"> 
+        <section class="top-bar-section">
+        <!-- Right Nav Section -->
+          <ul class="right">
+            <li class= "has-form">
+              <div class = "language">
+                <%= form_tag(root_url, class: 'locale') do %>
+                <%= select_tag(:LANGUAGES, options_for_select([['Español', 1], ['English', 2]])) %>
+                <% end %>
+              </div>
+            </li>
+            <li class="divider"></li>
+            <li class= "has-form">
+              <div class= "row_login">
+                  <div class="column_left">
+                    <%= link_to  t('.signup'), new_user_registration_path, :class=> "button radius" %>
+                  </div>
+                  <div class="column_right">
+                    <%= link_to  t('.signin'), new_user_session_path, :class=> "button radius" %>
+                  </div>
+              </div>
+            </li>
+            <li class="divider"></li>
+            <li class= "has-form">
+              <div class = "search">
+                <div class="row collapse">
+                  <div class="large-7 small-9 columns">
+                    <%= form_tag("/search", method: "get") do %>
+                    <%= text_field_tag(:q) %>
+                  </div>
+                  <div class="large-5 small-3 columns">
+                    <%= submit_tag("Search", class: "button radius round")%>
+                    <% end %>  
+                  </div>
+                </div>       
+              </div>
+            </li>
+          </ul> 
+        </section>
+      </nav> 
+    </div>
+    <div class = "banner">
+      <%= image_tag("advertice.png") %>
+    </div>
+    <!--<div class = "follow">
+        <ul class="layout">
+          <li class="iconfacebook">
+          <a href="https://www.facebook.com/andrea.becerra.712161" class="btn png_bg" title="Facebook" target="_blank">.</a>
+          </li>
+           <li class="icontwitter">
+          <a href="https://www.facebook.com/andrea.becerra.712161" class="btn png_bg" title="Facebook" target="_blank"                                           onclick="ntptEventTag('ev=snsLead&SNSId=facebook');">F</a>
+          </li>
+           <li class="icongoogle">
+          <a href="https://www.facebook.com/andrea.becerra.712161" class="btn png_bg" title="Facebook" target="_blank"                                           onclick="ntptEventTag('ev=snsLead&SNSId=facebook');">F</a>
+          </li>
+           <li class="iconyoutube">
+          <a href="https://www.facebook.com/andrea.becerra.712161" class="btn png_bg" title="Facebook" target="_blank"                                           onclick="ntptEventTag('ev=snsLead&SNSId=facebook');">F</a>
+          </li>
+        </ul>
+      </div>-->
+  </div>
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li><%= link_to_unless I18n.locale == :es, "Español", locale: :es %></li>
-      <li><%= link_to_unless I18n.locale == :en, "English", locale: :en %></li>
+  <div class = "menu">
+   <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to t('.name'), root_path, id: "logo" %></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
 
-      <li class="active"><%= link_to  t('.home'), root_url %></li>
-
-
-     
-      <li><%= link_to  t('.help'),    help_path %></li>
-      <li><%= link_to  t('.signup'), new_user_registration_path %></li>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><%= link_to_unless I18n.locale == :es, "Español", locale: :es %></li>
+        <li><%= link_to_unless I18n.locale == :en, "English", locale: :en %></li>
+        <li class="active"><%= link_to  t('.home'), root_url %></li>
+        <li class= "has-dropdown"><%= link_to  t('.ecuador') %>
+          <ul class="dropdown">
+            <li class= "has-dropdown"><%= link_to  t('.info') %>
+               <ul class="dropdown">       
+                 <li><%= link_to  t('.population'), population_path %></li>
+                 <li><%= link_to  t('.regions'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.wheater'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.money'), new_user_registration_path %></li>
+               </ul>
+            </li>
+            <li class= "has-dropdown"><%= link_to  t('.culture'), new_user_registration_path %></li>
+             <ul class="dropdown">       
+                 <li><%= link_to  t('.population'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.regions'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.wheater'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.money'), new_user_registration_path %></li>
+               </ul>
+            <li class= "has-dropdown"><%= link_to  t('.landscape'), new_user_registration_path %></li>
+             <ul class="dropdown">       
+                 <li><%= link_to  t('.population'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.regions'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.wheater'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.money'), new_user_registration_path %></li>
+               </ul>
+          </ul>
+        </li>
+        <li class="has-dropdown"><%= link_to  t('.places'), places_list_index_path  %>
+          <ul class="dropdown">   
+            <li class="has-dropdown"><%= link_to  t('.galapagos'), new_user_registration_path %>
+              <ul class="dropdown">  
+                <li><%= link_to  t('.isabela'), places_list_index_path %></li>
+                 <li><%= link_to  t('.sancristobal'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.santacruz'), new_user_registration_path %></li>
+              </ul>
+             </li>
+             <li class="has-dropdown"><%= link_to  t('.pacific'), new_user_registration_path %>
+              <ul class="dropdown">  
+                <li><%= link_to  t('.esmeraldas'), new_user_registration_path %></li>
+                <li><%= link_to  t('.manabi'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.guayas'), new_user_registration_path %></li>
+                <li><%= link_to  t('.losrios'), new_user_registration_path %></li>
+                <li><%= link_to  t('.eloro'), new_user_registration_path %></li>
+                <li><%= link_to  t('.santaelena'), new_user_registration_path %></li>
+              </ul>
+             </li>
+            <li class="has-dropdown"><%= link_to  t('.amazon'), new_user_registration_path %>
+              <ul class="dropdown">  
+                 <li><%= link_to  t('.sucumbios'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.napo'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.pastaza'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.orellana'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.moronasantiago'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.zamorachinchipe'), new_user_registration_path %></li>
+              </ul>
+             </li>
+            <li class="has-dropdown"><%= link_to  t('.andes'), new_user_registration_path %>
+              <ul class="dropdown">  
+                 <li><%= link_to  t('.carchi'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.imbabura'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.pichincha'), new_user_registration_path %></li>
+                <li><%= link_to  t('.cotopaxi'), new_user_registration_path %></li>
+                <li><%= link_to  t('.tungurahua'), new_user_registration_path %></li>
+                <li><%= link_to  t('.bolivar'), new_user_registration_path %></li>
+                <li><%= link_to  t('.chimborazo'), new_user_registration_path %></li>
+                <li><%= link_to  t('.cañar'), new_user_registration_path %></li>
+                <li><%= link_to  t('.azuay'), new_user_registration_path %></li>
+                <li><%= link_to  t('.loja'), new_user_registration_path %></li>
+                <li><%= link_to  t('.santodomingo'), new_user_registration_path %></li>
+                
+              </ul>
+             </li>
+            </ul>
+          </li>
+        <li class="has-dropdown"><%= link_to  t('.do'), locations_path %>
+          <ul class="dropdown">  
+            <li><%= link_to  t('.gastronomy'), new_user_registration_path %></li>
+            <li><%= link_to  t('.culture'), new_user_registration_path %></li>
+            <li><%= link_to  t('.adventure'), new_user_registration_path %></li>
+            <li><%= link_to  t('.shoping'), new_user_registration_path %></li>
+          </ul>
+        </li>
+        <li><%= link_to  t('.hotelsrestaurant'), locations_path %></li>
+        <li class= "has-dropdown"><%= link_to t('.plan'), attractions_path %>
+          <ul class="dropdown">
+            <li class= "has-dropdown"><%= link_to t('.before'), attractions_path %>
+               <ul class="dropdown">
+                 <li><%= link_to  t('.trip_planner'), plans_path %></li>
+                 <li><%= link_to  t('.visa'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.visa'), new_user_registration_path %></li>
+               </ul>
+            </li>
+             <li class= "has-dropdown"><%= link_to t('.before'), attractions_path %>
+               <ul class="dropdown">
+                 <li><%= link_to  t('.visa'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.visa'), new_user_registration_path %></li>
+                 <li><%= link_to  t('.visa'), new_user_registration_path %></li>
+               </ul>
+            </li>
+          </ul>
+        </li>
+          <li><%= link_to t('.comments'), comments_path %></li>
          <% if user_signed_in? %>
-           <li><%= link_to  t('.locations'), locations_path %></li>
-          <li><%= link_to t('.attractions'), attractions_path %></li>
-          <li><%= link_to t('.comments'),    comments_path %></li>
-           <li class="has-dropdown">
-            <a href="#"><%= t('.account') %></a>
-             <ul class="dropdown">
+      
+        <li class="has-dropdown">
+          <a href="#"><%= t('.account') %></a>
+          <ul class="dropdown">
             <li><%= link_to  t('.profile'), '#' %></li>
             <li><%= link_to  t('.edit'), edit_user_registration_path %></li>
             <li><%= link_to  t('.signout'), destroy_user_session_path, method: "delete" %></li>
-         <% else %>
-            <li><%= link_to  t('.signin'), new_user_session_path %></li>
-         <% end %>
-        </ul>
-      </li>
-    </ul>
-  </section>
-</nav>
+             
+              <% end %>
+          </ul>
+        </li>
+       </ul>
+     </section>
+   </nav>
+  </div>
+</div>

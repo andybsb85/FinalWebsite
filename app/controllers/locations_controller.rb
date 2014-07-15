@@ -4,7 +4,11 @@ class LocationsController < ApplicationController
   # GET /locations
   # GET /locations.json
   def index
-    @locations = Location.all
+      @locations = Location.all
+      @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
+      marker.lat location.latitude
+      marker.lng location.longitude
+      end
   end
 
   # GET /locations/1
@@ -20,7 +24,7 @@ class LocationsController < ApplicationController
   # GET /locations/1/edit
   def edit
   end
-
+  
   # POST /locations
   # POST /locations.json
   def create

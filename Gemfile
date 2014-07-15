@@ -14,7 +14,8 @@ gem 'sprockets', '2.11.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
-gem 'zurb-foundation'
+gem 'compass-rails' # you need this or you get an err
+gem 'foundation-rails'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '4.0.1'
@@ -40,6 +41,10 @@ gem "globalize", "~> 4.0.0.alpha.1"
 gem 'geocoder'
 gem 'gmaps4rails'
 
+
+group :development do
+  gem 'rails_layout'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -16,6 +16,7 @@
       <tr>
         <td><%= comment.title %></td>
         <td><%= comment.description %></td>
+         
         <td><%= link_to t('.show'), comment %></td>
         <td><%= link_to t('.edit'), edit_comment_path(comment) %></td>
         <td><%= link_to t('.destroy'), comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +28,4 @@
 <br>
 
 <%= link_to t('.new_comment'), new_comment_path %>
+

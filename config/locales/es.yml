@@ -22,7 +22,7 @@
 es:
   layouts:
     header:
-      name: "Ecuador Viajes & Turismo"
+      name: "Ecuador"
       home: "Inicio"
       attractions: "Atracciones"
       locations: "Lugares"
@@ -36,6 +36,13 @@ es:
       account: "Cuenta"
       edit: "Editar Usuario"
       signout: "Cerrar Sesion"
+      about: "Quienes Somos"
+      contact: "Contactenos"
+      ecuador: "Sobre Ecuador"
+      places: "Destinos"
+      do: "Actividades"
+      plan: "Planear Viaje"
+      hotelsrestaurant: "Hoteles y Restaurantes"
     footer:
       about: "Quienes Somos"
       contact: "Contactenos"

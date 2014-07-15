@@ -31,10 +31,19 @@
     <% end %>
   </tbody>
 </table>
-  <div style='width: 800px;'>
-    <div id="map" style='width: 800px; height: 400px;'></div>
-  </div>
+ <div class= "maps" style='width: 800px;'>
+   <div id="map" style='width: 800px; height: 400px;'></div>
+ </div>
 
 <br>
 
 <%= link_to 'New Location', new_location_path %>
+
+<script type= "text/javascript">
+handler = Gmaps.build('Google');
+handler.buildMap({ internal: {id: 'basic_map' }}); function(){
+  markers = handler.addMarkers(<%=raw @hash.to_json %>);
+  handler.bounds.extendWith(markers);
+  handler.fitMapToBounds();
+});
+</script>

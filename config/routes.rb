@@ -1,7 +1,12 @@
 Website::Application.routes.draw do
 
-  resources :locations
+  get "ratings/update"
+  resources :line_items
+  resources :plans
+  get "places_list/index"
 
+resources :ratings, only: :update
+resources :locations
 resources :comments
 resources :attractions
 resources :welcome
@@ -13,7 +18,7 @@ devise_for :users , controllers: {users: 'users', sessions: 'sessions'}
   root :to => 'welcome#index'
 
   get '/about' => 'welcome#about'
-  get '/whats' => 'welcome#whats'
+  get '/population' => 'welcome#population'
   get '/survey' => 'welcome#survey'
   get '/help' => 'welcome#help'
   get '/contact' => 'welcome#contact'
@@ -32,7 +37,7 @@ devise_for :users , controllers: {users: 'users', sessions: 'sessions'}
      resources :about
      resources :help
      resources :contact
-     resources :whats
+     resources :population
      resources :survey
 
   end

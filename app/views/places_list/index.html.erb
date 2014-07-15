@@ -1,0 +1,41 @@
+<script src = "//code.jquery.com/jquery-1.11.0.min.js"> </script>
+<script src = "javascripts/jquery.raty.js"> </script>
+<script type="text/javascript">
+  $(document).on('ready', function()
+  {
+    $('#live-review').raty({
+      target: '#live',
+      targetkeep: true,
+      path: '/assets'
+    })
+  })
+</script>
+<%if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<div class="place">
+  <h1>Destinations</h1>
+
+   <div class= "entry">
+     <% @locations.each do |location| %>
+       <h3><%=location.title %></h3>
+       <div class="img_location">
+         <%= link_to (image_tag("galapagos.jpg")), location %>
+       </div>
+       <div class="des_location">
+       <%= sanitize(location.description) %>
+       <%= button_to 'Add to Plan', line_items_path(location_id: location) %>
+        <p>Averate rating</p>
+        <div id= "live-review"></div>
+        <span id="live"></span>
+       </div>
+     <% end %>
+  </div>   
+  <div class="side">
+    <div class="plan">
+      <%= render @plan %>
+    </div>
+  </div>
+</div>
+
+

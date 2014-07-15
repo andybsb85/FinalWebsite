@@ -2,32 +2,323 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+   background-image: url("amazon.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 550px;
 
-.content {
-	margin-left: 80px;
-	margin-right: 80px;
-	text-align: center;
+   
 }
 
 
+html,
+body,
+header,
+content,
+footer{
+	display: block;
+}
+
+.container{
+
+}
+
+/* ============= style for header====================*/
+
+.header{  
+   height: 120px;
+   margin-left: 12%;
+   margin-right: 12%;
+ 
+}
+
+.logo{
+     background-color: white;
+     position: absolute;
+     z-index: 1;
+     height: 150px;
+     width: 10%; 
+     padding-left: 1%;
+     padding-right:1%;
+     padding-top: 1%;
+     padding-bottom:1%;
+
+    img{
+     height: 130px;
+     width: 100%; 
+    }
+  }
+
+.header-right{
+  width: 100%;
+  
+  .top-bar{
+     background-color: rgba(0,0,0,0.3);
+    .top-bar-section ul li{
+      background-color: rgba(0,0,0,0.3);
+    }
+  }  
+}
+.language{
+  float: right;
+  width: 50%;
+}
+.has-form{
+  width: 300px;
+}
+.row_login{
+  background-color: #ff0000;
+  width: 100%;
+
+  .column_left{
+    float: left;
+    width: 45%;
+
+  }
+
+  .column_right{
+     float: left;
+     width: 45%;
+  }
+}
+
+.banner{
+
+   float: right;
+   width: 40%; 
+   height: 100px;
+   margin-top: 1%;
+   margin-bottom: 1%;
+  
+  img{
+    width: 100%;
+    height: 60px;
+     } 
+  
+}
+.follow{
+  float: right;
+  height: 40px;
+  width: 100%; 
+  text-align: left;
+
+  
+  ul.layout{
+      margin-left: 18%;
+      list-style: none;
+      width: 39%;
+      height: 35px;
+
+    
+    .iconfacebook{
+      padding: 7% 7%;
+      background-image: url("facebook.png");
+      background-size: 35px 35px;
+      float: left;
+      width: 35px;
+      height: 35px;
+      
+    }
+    
+    .icontwitter{
+      padding: 7% 7%;
+      margin-left: 4%;
+      background-image: url("twitter.png");
+      background-size: 35px 35px;
+      float: left;
+      width: 35px;
+      height: 35px;
+ 
+    }
+    .icontwitter{
+      padding: 7% 7%;
+      margin-left: 6%;
+      background-image: url("twitter.png");
+      background-size: 35px 35px;
+      float: left;
+      width: 35px;
+      height: 35px;
+ 
+    }
+    
+    .iconyoutube{
+      padding: 7% 7%;
+      margin-left: 6%;
+      background-image: url("youtube.png");
+      background-size: 35px 35px;
+      float: left;
+      width: 35px;
+      height: 35px;
+ 
+    }
+     .icongoogle{
+      padding: 7% 7%;
+      margin-left: 6%;
+      background-image: url("google+.png");
+      background-size: 35px 35px;
+      float: left;
+      width: 35px;
+      height: 35px;
+     }
+   }
+}
+
+
+.menu{
+  position: relative;
+  float: left;
+  width: 100%; 
+  opacity: 1.5;
+}
+
+/* ============= style for content index====================*/
+
+.globalContent{
+  float: left;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  height: auto;
+  
+  .row-orbit{
+        float: left;
+        width: 100%;
+        height: 420px;
+    
+      
+      .column1{
+        
+          width: 65%;
+          height: 420px;
+          float: left;
+         
+         .content {
+          float: left;
+          width: 100%;
+          height: 420px;
+
+            .orbit-container{
+              height: 420px;
+                ul{
+                 list-style-type: none;
+                 padding: 0px;
+                 margin-left: 0px;
+                }
+                img{
+                
+                  width: 100%;
+                  height: 402px;
+                  
+              } 
+            }
+         }
+      }
+      .column2{
+          width: 35%;
+          height: 400px;
+          float: right;
+        
+          .welcome{
+            margin-top: 5%;
+            margin-left: 4%;
+            margin-right: 3%;
+            float: left;
+            width: 94%;
+            background-color: #000000;
+            opacity: 0.7;
+            
+            h2{
+               color: #ffffff;
+              }
+           }
+        
+          .news{
+             margin-top: 10%;
+             margin-left: 4%;
+             margin-right: 3%;
+             float: left;
+             width: 94%;
+             background-color: #000000;
+             opacity: 0.7;
+
+              h2{
+                color: #ffffff;
+                }
+          }
+       }
+    }
+  
+   .row2{
+     
+       background-color: #ffffff;
+       float:left;
+       width: 100%;
+       height: 300px;
+       margin-top: 2%;
+     
+         .top_places{
+           margin-left: 2%;
+           float: left;
+           width: 100%;
+           
+           h3{
+             text-align: left;
+           }
+         }
+     
+         .places_content{
+           float: left;
+           width: 100%;
+           height: 250px;
+                   
+           .images{
+               width: 25%;
+               margin-left: 1%;
+               float: left;
+               background-color: #000033;
+                               
+               img{
+                 width: 100%;
+                 height: 180px;
+                  
+                 }
+              }
+          }
+      }
+
+   
+  
+   .row3{
+       float:left;
+       width: 100%;
+       height: 300px;
+     
+     
+       .topActivities{
+         background-color: #0000FF;
+         width: 100%;
+         text-align: left;
+         margin-top: 2%;
+         margin-down: 2%;
+       }
+     
+   }
+}
+
+/*
 .footer {
    background: #212D48;
-   height: 50px;
-   position: relative;
-   bottom: 0px;
-   left: 0px;
+   height: 100px;
    line-height: 50px;
    color: #fff;
    text-align: center;
    width: 100%; 
 }
+*/
 
-.orbit-container{
- 
-   width:600px;
-	 height: 540px;
-   align-content: space-around; 
-}
+
+
 
 
 

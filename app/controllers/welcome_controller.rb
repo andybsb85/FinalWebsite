@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-  end
+     @locations = Location.order(:title)
+   end
  	
  	def help
   end

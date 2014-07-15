@@ -1,0 +1,78 @@
+// Place all the styles related to the PlacesList controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.places_list{
+  background-image: url("blueback.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 700px;
+   background-attachment: fixed;
+  
+  .place{
+
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 7%;
+    height: 900px;
+    background-color: #ffffff;
+    
+    h1{
+      margin-left: 2%;
+    }
+  
+  .entry{
+    
+    float: left;
+    width: 68%;
+    height: 500px;
+    
+    h3{
+      margin-left: 2%;
+    }
+
+    
+    .img_location{
+      width: 43%;
+      float: left;
+      height:250px;
+      padding: 2%;
+    }
+    
+    .des_location{
+      width: 57%;
+      float: right;  
+      height: 250px;
+      padding: 2%;
+    }
+  }
+  
+  .side{
+    background-color: #C0C0C0;
+    float: right;
+    width: 30%;
+    height: 400px;
+    padding: 2%;
+    margin-right: 2%;
+    }
+  
+  
+  #live-review{
+    width: 100%;
+
+    img{
+      width: 15px;
+    }
+  }
+  #live{
+
+   
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,3 +1,21 @@
 // Place all the styles related to the locations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.locations{
+   background-image: url("blueback.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 700px;
+   background-attachment: fixed;
+    
+  
+  .detail_location{
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 7%;
+    height: 900px;
+    background-color: #ffffff;
+
+  }
+}

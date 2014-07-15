@@ -1,60 +1,114 @@
-<div class = "content">
-	<div class="center">
-		<% if user_signed_in? %>
-			<% current_user.email %>
-		<% end %>
+<div class = "globalContent">
+  <div class="row-tabs">
+    <ul class="tabs" data-tab>
+      <li class="tab-title active"><a href="#panel2-1">Tab 1</a></li>
+      <li class="tab-title"><a href="#panel2-2">Tab 2</a></li>
+      <li class="tab-title"><a href="#panel2-3">Tab 3</a></li>
+      <li class="tab-title"><a href="#panel2-4">Tab 4</a></li>
+    </ul>
+    <div class="tabs-content">
+      <div class="content active" id="panel2-1">
+        <p>First panel content goes here...</p>
+      </div>
+      <div class="content" id="panel2-2">
+        <p>Second panel content goes here...</p>
+      </div>
+      <div class="content" id="panel2-3">
+        <p>Third panel content goes here...</p>
+      </div>
+      <div class="content" id="panel2-4">
+        <p>Fourth panel content goes here...</p>
+      </div>
+    </div>
+  </div>
+  <div class="row-orbit">
+    <div class="column1">
+      <div class ="content">
+        <% if user_signed_in? %>
+        <% current_user.email %>
+        <% end %>
+        <div class= "orbit-container" >
+          <ul data-orbit class="example-orbit orbit-slides-container" data-options="animation:slide;
+                  pause_on_hover:true;
+                  animation_speed:1500;
+                  navigation_arrows:true;
+                  bullets:false;">
+            <li class="active">
+              <%= image_tag("turtle.jpg", alt: "slide1") %>
+              <div class="orbit-caption">
+                <%= t ('.caption1') %>
+              </div>
+            </li>
+            <li>
+              <%= image_tag("lake.jpg", alt: "slide2") %>
+              <div class="orbit-caption">
+                <%= t ('.caption2') %>
+              </div>
+            </li>
+            <li>
+              <%= image_tag("pelican.jpg", alt: "slide3") %>
+              <div class="orbit-caption">
+                <%= t ('.caption3') %>
+              </div>
+            </li>
+          </ul>
+            <!-- Navigation Arrows -->
+          <a href="#" class="orbit-prev">Prev <span></span></a>
+          <a href="#" class="orbit-next">Next <span></span></a>
 
-	 	<h1><%= t ('.welcome') %></h1>
+            <!-- Slide Numbers -->
+          <div class="orbit-slide-number">
+            <span>1</span> of <span>3</span>
+          </div>
 
-	 	<p><%= t ('.intro') %></p>
-
-
-		<div class= "orbit-container">
-		    <ul data-orbit data-options="animation_speed:1500;">
-		     </li>
-		   	 <li class="active">
-		    	<%= image_tag("pic3.jpg", alt: "slide1") %>
-		      <div class="orbit-caption">
-		       <%= t ('.caption1') %>
-		      </div>
-		   	 </li>
-		   	 <li>
-		     	<%= image_tag("pic4.jpg", alt: "slide2") %>
-		      <div class="orbit-caption">
-		        <%= t ('.caption2') %>
-		      </div>
-		   	 </li>
-       <li>
-		     	<%= image_tag("picture1.jpg", alt: "slide3") %>
-		      <div class="orbit-caption">
-		        <%= t ('.caption3') %>
-		      </div>
-		   	 </li>
-		 	</ul>
-
-		 	 <!-- Navigation Arrows -->
-		 	<a href="#" class="orbit-prev">Prev <span></span></a>
- 			<a href="#" class="orbit-next">Next <span></span></a>
-
- 			<!-- Slide Numbers -->
- 			<div class="orbit-slide-number">
-  			<span>1</span> of <span>2</span>
- 			</div>
-
- 			 <!-- Timer and Play/Pause Button -->
-  			<div class="orbit-timer">
-   			<span></span>
-   			 <div class="orbit-progress"></div>
-  			</div>
-		</div>
-    
-   		<ol class="orbit-bullets">
-  			<li data-orbit-slide-number="1"></li>
-  			<li data-orbit-slide-number="2" class="active"></li>
-        <li data-orbit-slide-number="3"></li>
-		</ol>
+          <!-- Timer and Play/Pause Button -->
+          <div class="orbit-timer">
+            <span></span>
+          <div class="orbit-progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "column2"> 
+      <div class= "welcome">
+        <h2><%=t ('.welcome')%></h2>
+      </div>
+      <div class= "news">
+        <h2><%=t ('.news')%></h2>
+      </div>
+    </div>
+  </div>
+  <div class="row2">
+    <div class="top_places">
+      <h3><%=t ('.tPlaces') %></h3>
+    </div>  
+    <div class= "places_content">
+      <% @locations.each do |location| %>
+    <div class="images">
+      <%= image_tag("pic2.jpg") %>
+      <h2><%=location.title %></h2>
+    </div>
+      <% end %>
+  </div>
+</div>
+  <div class="row3">
+  </div>
   
-		<%= link_to t('.survey'), '#', class: "button [radius round]" %>
-	 	<%= link_to t('.sign_up'), '#', class: "button [radius round]" %>
-	</div>
+  <%= link_to t('.survey'), '#', class: "button [radius round]" %>
+  <%= link_to t('.sign_up'), '#', class: "button [radius round]" %>
 </div> 
+
+<script>
+  $(document).foundation({
+    tab: {
+      callback : function (tab) {
+        console.log(tab);
+      }
+    }
+  });
+</script>
+
+<script>
+  $('#myTabs').on('toggled', function (event, tab) {
+    console.log(tab);
+  });
